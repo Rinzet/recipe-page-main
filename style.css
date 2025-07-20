@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap');
+
+body {
+    background-color: rgba(250, 235, 215, 0.76);
+    margin: 0;
+}
+
+.img-head {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.head-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.head-text h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.head-text p {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Preparation Time */
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 0 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.prep-time h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+    align-self: flex-start;
+    margin-bottom: 0px;
+}
+.prep-time ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 20px;
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    align-self: flex-start;
+}
+.prep-time ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.prep-time ul li::marker {
+    color: hsl(332, 51%, 32%);
+    font-size: 0.7em;
+}
+
+/* Ingredients */
+.ingre-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.ingre-sec h2 {
+    font-family: "Young Serif", serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+    font-size: 24px;
+    align-self: flex-start;
+    margin-bottom: 0;
+}
+.ingre-sec ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 20px;
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    align-self: flex-start;
+}
+.ingre-sec ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.ingre-sec ul li::marker {
+    color: hsl(14, 45%, 36%);
+    font-size: 0.7em;
+}
+
+/* Instructions */
+.inst-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.inst-sec h2 {
+    font-family: "Young Serif", serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+    font-size: 24px;
+    align-self: flex-start;
+    margin-bottom: 0;
+}
+.inst-sec ol {
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding-left: 20px;
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    align-self: flex-start;
+}
+.inst-sec ol li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.inst-sec ol li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+/* Nutritional Information */
+.nutri-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.nutri-sec h2 {
+    font-family: "Young Serif", serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+    font-size: 24px;
+    align-self: flex-start;
+    margin-bottom: 0;
+}
+.nutri-sec p {
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    align-self: flex-start;
+}
+.nutri-sec table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.nutri-sec th, .nutri-sec td {
+    font-family: "Outfit", sans-serif;
+    border-bottom: 1.5px solid hsl(30, 18%, 87%);
+    padding: 10px;
+    text-align: left;
+}
+.nutri-sec .nutri-value {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+.nutri-sec tr:last-child th,
+.nutri-sec tr:last-child td {
+    border-bottom: none;
+}
+
+/* Divider */
+.divider {
+    border: none;
+    border-bottom: 2px solid hsla(28, 16%, 77%, 0.644);
+    margin: 15px auto;
+    width: 90%;
+}
+
+/* Attribution */
+.attribution { font-size: 11px; text-align: center; margin-top: 40px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Responsive Design */
+.main-wrapper {
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    .main-wrapper {
+        margin: 40px auto 0 auto;
+        transition: margin 0.6s cubic-bezier(0.4,0,0.2,1);
+        
+    }
+
+    .main-content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 24px 48px 24px 48px;
+        transition: padding 0.6s cubic-bezier(0.4,0,0.2,1);
+    }
+    .img-head {
+        border-radius: 15px;
+        transition: border-radius 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);
+    }
+}
+
+@media (max-width: 599px) {
+    .main-wrapper {
+        transition: padding 0.6s cubic-bezier(0.4,0,0.2,1);
+    }
+    .main-content {
+        transition: padding 0.6s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    .img-head {
+        transition: border-radius 0.6s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);
+    }
+}
